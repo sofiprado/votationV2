@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/style.css" />
+
+</head>
+<body>
+
+
+<div id="main-container">
+ 
+  <h1 id="mainTitle">Vacaciones en:</h1>
+    {{#each data}}
+     <img class="image" src="{{this.img}}"/>
+     <div class="info">
+        <img data-id='{{this.id}}' class="icon" src="https://media.ldscdn.org/images/media-library/primary/primary-symbols/nursery-manual-symbols/heart-1232299-gallery.jpg"/>
+        <p class="titles">{{this.title}}</p>
+        <p class="likes">{{this.likes}}<span> likes</span></p>
+     </div>
+    {{/each}}
+
+</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="/javascripts/main.js"></script>
+</body>
+</html>
