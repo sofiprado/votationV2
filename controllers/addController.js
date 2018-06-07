@@ -1,26 +1,16 @@
-const homeController = require('./homeController.js')
+const imageService = require('../services/imageService')
 
 let self = {}
 
 //self.archiveArray = []
 
-const homeData = homeController.data
-console.log(homeData)
+
+
 self.agregar = function(req, res) {
-  const findId = homeData.length
-  const newIds = homeData[findId-1].id 
-    
-  homeData.unshift({
-    img: req.body.imagen,
-    title: req.body.nombre,
-    id: newIds +1,
-    likes: 0
-  })
+ const img = imageService.agregar(req.body) // le mando todo el body a la función agregar en service
+  res.json(img)
+}  
 
-  //homeData.reverse()
+module.exports = self;  
 
-  // console.log(homeData) 
-  res.json(homeData)
-  }
 
-  module.exports = self;  

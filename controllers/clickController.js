@@ -1,22 +1,14 @@
-const homeController = require('./homeController.js')
+const imageService = require('../services/imageService')
 
 let self = {}
 
-const homeData = homeController.data
 
 self.update = function(req, res) {
-  let likes = 0 
-  for (var i = 0; i < homeData.length; i++) {
-
-    if (homeData[i].id == req.body.id) {
-    //  console.log(data[i])
-      homeData[i]['likes'] = parseInt(homeData[i]['likes']) + 1
-     // console.log(data[i])
-      likes = homeData[i]['likes']
-    }
+//console.log('hola')
+  const likes = imageService.update(req.body.id) //le mando la info a la función update
+//console.log(likes)
+ res.json({likes: likes})   
   }
-  res.json({likes: likes})   
-}
 
 module.exports = self;
 

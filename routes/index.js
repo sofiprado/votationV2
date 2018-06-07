@@ -17,8 +17,10 @@ const addController = require('../controllers/addController.js')
 
 const inputsController = require('../controllers/inputsController.js')
 
+const routeController = require('../controllers/routeController.js')
 
-router.get('/home', homeController.home) 
+
+router.get('/home/', homeController.home) 
 
 router.put('/home', clickController.update)
 
@@ -27,6 +29,8 @@ router.post('/agregar', addController.agregar)
 router.get('/agregar', addController.agregar)
 
 router.get('/inputs', inputsController.newInputs)
+
+router.get('/hola/:id', routeController.dinamicRoutes)
 
 
 module.exports = router;
