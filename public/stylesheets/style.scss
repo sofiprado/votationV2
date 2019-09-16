@@ -1,3 +1,5 @@
+
+
 body {
   display: flex;
   justify-content: center;
@@ -30,7 +32,7 @@ body {
   input {
     border-radius: 5px;
     border: 1px solid darkblue;
-    font-family: helvetica;
+    font-family: 'Crimson Text', serif;
     color: darkblue;
     display: block;
    // margin: 5px;
@@ -40,7 +42,7 @@ body {
     border: none;
     background-color: darkblue;
     font-weight: bold;
-    font-family: helvetica;
+    font-family: 'Crimson Text', serif;
     color: white;
     width: 100px;
     height: 30px;
@@ -66,7 +68,7 @@ body {
   #mainTitle {
     font-size: 40px;
      color: darkblue;
-     font-family: helvetica;
+     font-family: 'Crimson Text', serif;;
   }
  
   .info {
@@ -87,12 +89,12 @@ body {
      }
 
   .titles {
-    font-family: helvetica;
+    font-family: 'Crimson Text', serif;
     font-size: 40px;
     color: darkblue;
     }
     .likes {
-      font-family: helvetica;
+      font-family: 'Crimson Text', serif;
       color: blue;
       font-size: 25px;
       margin-left: 15px;

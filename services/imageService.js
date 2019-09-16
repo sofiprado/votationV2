@@ -21,9 +21,9 @@ let self = {}
   }]
 
 
-  self.agregar = function(data){ //data es el body que me envía el addController, por eso después hago data.imagen, etc (que viene del ajax)
+  self.agregar = function(data){ 
     const findId = this.imgsArray.length
-  const newIds = this.imgsArray[findId-1].id 
+    const newIds = this.imgsArray[findId-1].id 
    // console.log(this)
   this.imgsArray.unshift({
     img: data.imagen,
@@ -31,13 +31,13 @@ let self = {}
     id: newIds +1,
     likes: 0
   });
- return this.imgsArray // esto es lo que le devuelvo al addController para hacer un json.
+ return this.imgsArray 
 }
 
-self.update = function(id){ //id es lo que me manda el clickController (req, res), por eso en vez de req.body.id pongo solo == id 
+self.update = function(id){ 
 let likes = 0 
 for (var i = 0; i < this.imgsArray.length; i++) {
-  if (this.imgsArray[i].id == id) { //id viene del clickController
+  if (this.imgsArray[i].id == id) { 
   //  console.log(data[i])
     this.imgsArray[i]['likes'] = parseInt(this.imgsArray[i]['likes']) + 1
    // console.log(data[i])

@@ -18,14 +18,14 @@ body {
     body #addData input {
       border-radius: 5px;
       border: 1px solid darkblue;
-      font-family: helvetica;
+      font-family: 'Crimson Text', serif;
       color: darkblue;
       display: block; }
     body #addData #add {
       border: none;
       background-color: darkblue;
       font-weight: bold;
-      font-family: helvetica;
+      font-family: 'Crimson Text', serif;
       color: white;
       width: 100px;
       height: 30px;
@@ -42,7 +42,7 @@ body {
   #main-container #mainTitle {
     font-size: 40px;
     color: darkblue;
-    font-family: helvetica; }
+    font-family: 'Crimson Text', serif; }
   #main-container .info {
     display: flex;
     align-items: center;
@@ -57,11 +57,11 @@ body {
       width: 47px;
       margin: 5px; }
     #main-container .info .titles {
-      font-family: helvetica;
+      font-family: 'Crimson Text', serif;
       font-size: 40px;
       color: darkblue; }
     #main-container .info .likes {
-      font-family: helvetica;
+      font-family: 'Crimson Text', serif;
       color: blue;
       font-size: 25px;
       margin-left: 15px; }

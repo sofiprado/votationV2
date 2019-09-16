@@ -1,6 +1,5 @@
 let self = {}
 
-
 const imageService = require('../services/imageService')
 const imgsArray = imageService.imgsArray
 
